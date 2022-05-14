@@ -12,7 +12,8 @@ import NFTAbi from '../contractsData/NFT.json'
 import NFTAddress from '../contractsData/NFT-address.json'
 import { useState } from 'react'
 import { ethers } from "ethers"
-import { BrowserRouter, Routes } from 'react-router-dom';
+import { Spinner } from 'react-bootstrap'
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
  
 function App() {
   const [loading, setLoading] = useState(true)
@@ -69,7 +70,7 @@ function App() {
           )}
         </div>
       </div>
-    </BrowserRouter>
+    </BrowserRouter> 
 
   );
 }
